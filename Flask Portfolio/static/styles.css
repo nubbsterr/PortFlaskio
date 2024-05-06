@@ -1,0 +1,59 @@
+/* Main HTML styling stuff */
+body {
+  background-color: #f0e9d6;
+  color: #242424;
+  font-family: Trebuchet MS, sans-serif;
+  text-align: left;
+  height: 100vh; /* Height of content takes up entire screen width */
+  margin: 0;
+}
+
+a { /* Removes hyperlink underline */
+  text-decoration: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center container horizontally */
+  align-items: center; /* Center items vertically */
+  height: 100vh;
+}
+
+#main-content {
+  padding: 20px;
+  max-width: 1080px;
+  line-height: 1.5;
+}
+
+#social-links {
+  margin-top: 20px;
+}
+
+/* Social link button styling! */
+.social-button {
+  display: inline-block;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #242424;
+  border: 2px solid #313131;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+  overflow: hidden;
+  transition: background-color, 0.5s; /* Transition background colour to that specified in hover style below when hovering over button */
+}
+
+.social-button:hover {
+  cursor: pointer; /* Turn cursor into pointer style when hovering over button */
+  background-color: #f0e9d6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Increase drop shadow size on hover */
+}
+
+.social-button img {
+  /* Styling image in button to slightly occupy the button and maintain aspect ratio based on width */
+  margin: auto; /* Center image horizontally */
+  vertical-align: middle; /* Self-explanatory lmao */
+  width: 90%;
+  height: auto;
+}
