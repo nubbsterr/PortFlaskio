@@ -1,126 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- basically used for interpreting character correctly -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- scales screen width to be the device width of the user! -->
-    <title>Nubb || Homepage</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='styles.css') }}"
-    />
-    <!-- linking to our CSS stylesheet -->
-    <link
-      rel="icon"
-      ,
-      type="image/x-icon"
-      href="{{ url_for('static', filename='favicon.jpg') }}"
-    />
-    <!-- reference to favicon for site, "type" parameter specifies media type, in this case, we're basically saying it's an icon -->
-  </head>
 
-  <body>
-    <div id="container">
-      <div id="main-content">
-        <header>
-          <h1>👋 Hey there, <strong>I'm Nubb.</strong></h1>
-          <p>
-            I'm a Grade 11 CS Student who enjoys <strong>networking</strong> and
-            <strong>programming</strong>. Most of the time, I'm programming side
-            projects <strong>(like this portfolio page!)</strong> or
-            <strong>posting on my online blog on Medium</strong>.
-          </p>
-          <p>
-            <strong>When I'm not working</strong>, I'm probably playing video
-            games or staring at my monitor rethinking my life choices. If you
-            wanna get in touch with me, stalk me online, or peep my dead YouTube
-            channel, <strong>check out my social links below!</strong>
-          </p>
-          <p>
-            If you wish to <strong>take a look at my resume</strong>, you can do so by
-            <a
-              href="{{ url_for('static', filename='Mourad - Resume 2024.pdf') }}" target="_blank"
-              ><strong>clicking here!</strong></a
-            >
-          </p>
-        </header>
-      </div>
-      <div id="social-links">
-        <button
-          class="social-button"
-          ,
-          onclick="window.location.href='https://github.com/nubbsterr'"
-        >
-          <!-- Github button -->
-          <img
-            src="{{ url_for('static', filename='github.png') }}"
-            ,
-            alt="GitHub"
-          />
-        </button>
-        <button
-          class="social-button"
-          ,
-          onclick="window.location.href='https://www.linkedin.com/in/mourad-sherif/'"
-        >
-          <!-- LinkedIn button -->
-          <img
-            src="{{ url_for('static', filename='linkedin.png') }}"
-            ,
-            alt="LinkedIn"
-          />
-        </button>
-        <button
-          class="social-button"
-          ,
-          onclick="window.location.href='mailto:sherm5344@gmail.com'"
-        >
-          <!-- Email button -->
-          <img
-            src="{{ url_for('static', filename='email.png') }}"
-            ,
-            alt="Email"
-          />
-        </button>
-        <button
-          class="social-button"
-          ,
-          onclick="window.location.href='https://medium.com/@nubb'"
-        >
-          <!-- Medium button -->
-          <img
-            src="{{ url_for('static', filename='medium.png') }}"
-            ,
-            alt="Medium"
-          />
-        </button>
-        <button
-          class="social-button"
-          ,
-          onclick="window.location.href='https://www.youtube.com/@nubbieeee'"
-        >
-          <!-- YouTube button -->
-          <img
-            src="{{ url_for('static', filename='youtube.png') }}"
-            ,
-            alt="YouTube"
-          />
-        </button>
-        <button
-          class="social-button"
-          ,
-          onclick="window.location.href='https://discord.com/users/822664791771447306'"
-        >
-          <!-- Discord button -->
-          <img
-            src="{{ url_for('static', filename='discord.png') }}"
-            ,
-            alt="Discord"
-          />
-        </button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <!-- basically used for interpreting character correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- scales screen width to be the device width of the user! -->
+  <title>Nubb || Homepage</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <!-- linking to our CSS stylesheet -->
+  <link rel="icon" , type="image/x-icon" href="{{ url_for('static', filename='favicon.jpg') }}" />
+  <!-- reference to favicon for site, "type" parameter specifies media type, in this case, we're basically saying it's an icon -->
+</head>
+
+<body>
+  <div id="container">
+    <div id="main-content">
+      <header id="uwu">
+        <h1>👋 Hey there, <strong>I'm Nubb.</strong></h1>
+        <p>
+          I'm a Grade 11 CS Student who enjoys <strong>networking</strong> and
+          <strong>programming</strong>. Most of the time, I'm programming side
+          projects <strong>(like this portfolio page!)</strong> or
+          <strong>posting on my online blog on Medium</strong>.
+        </p>
+        <p>
+          <strong>When I'm not working</strong>, I'm probably playing video
+          games or staring at my monitor rethinking my life choices. If you
+          wanna get in touch with me, stalk me online, or peep my dead YouTube
+          channel, <strong>check out my social links below!</strong>
+        </p>
+        <p>
+          If you wish to <strong>take a look at my resume</strong>, you can do so by
+          <a href="{{ url_for('static', filename='Mourad - Resume 2024.pdf') }}" target="_blank"><strong>clicking
+              here!</strong></a>
+        </p>
+      </header>
     </div>
-  </body>
+    <div id="social-links">
+      <button class="social-button" , onclick="window.location.href='https://github.com/nubbsterr'">
+        <!-- Github button -->
+        <img src="{{ url_for('static', filename='github.png') }}" , alt="GitHub" />
+      </button>
+      <button class="social-button" , onclick="window.location.href='https://www.linkedin.com/in/mourad-sherif/'">
+        <!-- LinkedIn button -->
+        <img src="{{ url_for('static', filename='linkedin.png') }}" , alt="LinkedIn" />
+      </button>
+      <button class="social-button" , onclick="window.location.href='mailto:sherm5344@gmail.com'">
+        <!-- Email button -->
+        <img src="{{ url_for('static', filename='email.png') }}" , alt="Email" />
+      </button>
+      <button class="social-button" , onclick="window.location.href='https://medium.com/@nubb'">
+        <!-- Medium button -->
+        <img src="{{ url_for('static', filename='medium.png') }}" , alt="Medium" />
+      </button>
+      <button class="social-button" , onclick="window.location.href='https://www.youtube.com/@nubbieeee'">
+        <!-- YouTube button -->
+        <img src="{{ url_for('static', filename='youtube.png') }}" , alt="YouTube" />
+      </button>
+      <button class="social-button" , onclick="window.location.href='https://discord.com/users/822664791771447306'">
+        <!-- Discord button -->
+        <img src="{{ url_for('static', filename='discord.png') }}" , alt="Discord" />
+      </button>
+    </div>
+  </div>
+  <script>
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+
+    switch (params.get('uwu')) {
+      case 'true':
+        localStorage.setItem('uwu', 'true');
+        break;
+      case 'false':
+        localStorage.setItem('uwu', 'false');
+        break;
+      default:
+        break;
+    }
+
+    const uwu = localStorage.getItem('uwu') === 'true';
+
+    if (uwu) {
+      const element = document.getElementById('uwu');
+      element.innerHTML = element.innerHTML.replace(/e/g, 'w').replace(/E/g, 'W').replace(/o/g, 'owo').replace(/O/g, 'OWO');
+    }
+  </script>
+</body>
+
 </html>
 <!-- A lot of this website was inspired by this madman's portfolio site (https://ynng.ca). If you ever find me and this comment, your portfolio's styling is awesome <3 -->
